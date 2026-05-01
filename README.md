@@ -18,7 +18,7 @@ This project builds a deep learning pipeline that synthesizes physically accurat
 ### Synthesis Output — MRI to Synthetic CT
 *MRI Input · Ground Truth CT · Predicted CT (CBAM) · Error Map · Ensemble Uncertainty*
 
-![Synthesis Output Grid]<img width="715" height="470" alt="Screenshot 2026-05-01 at 10 24 22 AM" src="https://github.com/user-attachments/assets/9b1e3e65-f4fa-4db1-8b44-2e4bd6487e69" />
+]<img width="715" height="470" alt="Screenshot 2026-05-01 at 10 24 22 AM" src="https://github.com/user-attachments/assets/9b1e3e65-f4fa-4db1-8b44-2e4bd6487e69" />
 
 
 > Each row is a different brain slice. The error map highlights prediction deviation in HU. The uncertainty map shows where the model lacks confidence — note how uncertainty concentrates at bone-soft tissue boundaries, exactly where HU accuracy is most critical.
@@ -26,7 +26,8 @@ This project builds a deep learning pipeline that synthesizes physically accurat
 ---
 
 ### Uncertainty Quantification — Error vs Predicted Uncertainty
-![Uncertainty Correlation](outputs/figures/uncertainty_correlation.png)
+<img width="643" height="582" alt="Screenshot 2026-05-01 at 10 25 22 AM" src="https://github.com/user-attachments/assets/3f1636fa-a6f2-43bd-94d0-ab12f16ab750" />
+
 
 > Spearman ρ = 0.7886 (p < 0.0001). The model's uncertainty maps reliably predict actual voxel-level error, enabling clinically actionable confidence signals.
 
@@ -41,7 +42,8 @@ This project builds a deep learning pipeline that synthesizes physically accurat
 | Self-Attention U-Net (M3) | Did not converge competitively | — | — | — |
 | Hybrid U-Net (M4) | Marginal over baseline | — | — | — |
 
-![Official Leaderboard](outputs/figures/leaderboard.png)
+<img width="689" height="145" alt="Screenshot 2026-05-01 at 10 27 22 AM" src="https://github.com/user-attachments/assets/796a3724-f89f-4850-a07b-f594efb6fae7" />
+
 
 - **Clinical benchmark**: State-of-the-art brain sCT architectures target 30–60 HU MAE for viable dose planning. All variants are competitive within this range.
 - **Uncertainty engine**: Spearman correlation ρ = 0.7886 (p < 0.0001) between predicted uncertainty and actual voxel error — proving the model reliably identifies its own failure regions.
@@ -159,7 +161,7 @@ uv run python -m src.main visualize
 
 **SynthRAD2023 — Task 1 (Brain Subset)**  
 A clinical benchmark dataset for MRI-to-CT synthesis in radiotherapy planning.  
-Access via the official SynthRAD2023 challenge: [synthrad2023.grand-challenge.org](https://synthrad2023.grand-challenge.org)
+Access via the official SynthRAD2023 challenge: [synthrad2023.grand-challenge.org](https://zenodo.org/records/7260705)
 
 ---
 
@@ -167,4 +169,4 @@ Access via the official SynthRAD2023 challenge: [synthrad2023.grand-challenge.or
 
 **Shriya Kotala**  
 MS in Computer Science · Georgia State University · Spring 2026  
-[LinkedIn](https://www.linkedin.com/in/shriya-kotala) · [GitHub](https://github.com/shriya-kotala)
+[LinkedIn](https://www.linkedin.com/in/shriya-kotala-4a2655243/) 
