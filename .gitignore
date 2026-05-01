@@ -1,0 +1,27 @@
+# macOS
+.DS_Store
+__MACOSX/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+*.egg
+.venv/
+venv/
+dist/
+build/
+
+# Data & Models (too large for GitHub)
+data/
+checkpoints/
+outputs/
+
+# Zip archives
+*.zip
+
+# Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Logs
+*.log
