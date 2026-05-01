@@ -18,7 +18,7 @@ This project builds a deep learning pipeline that synthesizes physically accurat
 ### Synthesis Output — MRI to Synthetic CT
 *MRI Input · Ground Truth CT · Predicted CT (CBAM) · Error Map · Ensemble Uncertainty*
 
-]<img width="715" height="470" alt="Screenshot 2026-05-01 at 10 24 22 AM" src="https://github.com/user-attachments/assets/9b1e3e65-f4fa-4db1-8b44-2e4bd6487e69" />
+<img width="715" height="470" alt="Screenshot 2026-05-01 at 10 24 22 AM" src="https://github.com/user-attachments/assets/9b1e3e65-f4fa-4db1-8b44-2e4bd6487e69" />
 
 
 > Each row is a different brain slice. The error map highlights prediction deviation in HU. The uncertainty map shows where the model lacks confidence — note how uncertainty concentrates at bone-soft tissue boundaries, exactly where HU accuracy is most critical.
